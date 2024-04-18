@@ -3,11 +3,11 @@
 
 
 def look_next_opened_box(opened_boxes):
-    """Looks for the next opened box
-    Args:
-        opened_boxes (dict): Dictionary which contains boxes opened
+    """
     Returns:
         list: List with the keys contained in the box
+    Args:
+        opened_boxes (dict): Dictionary which contains boxes opened
     """
     for index, box in opened_boxes.items():
         if box.get('status') == 'opened':
@@ -17,11 +17,11 @@ def look_next_opened_box(opened_boxes):
 
 
 def canUnlockAll(box):
-    """Check if all boxes can be opened
-    Args:
-        boxes (list): List which contain all the boxes with keys
+    """
     Returns:
         bool: True if all boxes can be opened, otherwise False
+    Args:
+        boxes (list): List which contain all the boxes with keys
     """
     if len(box) <= 1 or box == [[]]:
         return True
