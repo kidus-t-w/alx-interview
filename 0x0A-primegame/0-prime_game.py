@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Define the isWinner function, which provides a solution to the Prime Game problem.
+Define the isWinner function, which provides
+a solution to the Prime Game problem.
 """
 
 
@@ -27,7 +28,8 @@ def isWinner(x, nums):
             x (int): Number of rounds in the game.
             nums (list of int): List of upper limits for each round.
         Returns:
-            str: The name of the winner (Maria or Ben), or None if no winner can be determined.
+            str: The name of the winner (Maria or Ben),
+            or None if no winner can be determined.
     """
     if x is None or nums is None or x == 0 or nums == []:
         return None
